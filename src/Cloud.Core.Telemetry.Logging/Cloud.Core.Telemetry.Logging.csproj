@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>Robert McCabe</Company>
+    <IsPackable>true</IsPackable>
+    <PackageId>Cloud.Core.Telemetry.Logging</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>Cloud.Core.Web .net-Core Core Web</PackageTags>
+    <PackageReleaseNotes />
+    <Description>Contains functionality for defining specific loggers to work with the Logging Provider used in Service Collections.  Logging Providers can be added to the Service Collection object and used in both web and desktop (console) applications.</Description>
+    <Copyright>Robert McCabe</Copyright>
+    <Version>1.0</Version>
+    <Authors>Robert McCabe</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cloud.Core" Version="1.0.2408.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
