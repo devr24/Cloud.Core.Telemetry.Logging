@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Company>Robert McCabe</Company>
     <IsPackable>true</IsPackable>
     <PackageId>Cloud.Core.Telemetry.Logging</PackageId>
@@ -10,13 +10,20 @@
     <PackageReleaseNotes />
     <Description>Contains functionality for defining specific loggers to work with the Logging Provider used in Service Collections.  Logging Providers can be added to the Service Collection object and used in both web and desktop (console) applications.</Description>
     <Copyright>Robert McCabe</Copyright>
-    <Version>1.0</Version>
+    <Version>3.1</Version>
+	<RepositoryUrl>https://github.com/rmccabe24/Cloud.Core.AppHost</RepositoryUrl>
+	<PackageIconUrl>https://cloud1core.blob.core.windows.net/icons/CC.png</PackageIconUrl>
+	<RepositoryType>Private</RepositoryType>
     <Authors>Robert McCabe</Authors>
+    <SignAssembly>false</SignAssembly>
+    <ProjectGuid>{85CDA4C8-B792-4FAA-A8F3-3F061DCF61CB}</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cloud.Core" Version="1.0.2408.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Cloud.Core" Version="2.1.3513.106" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>

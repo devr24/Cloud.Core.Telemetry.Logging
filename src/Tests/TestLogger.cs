@@ -42,12 +42,22 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         {
         }
 
+        public void LogError(Exception ex, string message, Dictionary<string, string> properties = null, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        {
+            throw new NotImplementedException();
+        }
+
         public void LogInformation(string message, Dictionary<string, string> properties = null, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
         public void LogMetric(string metricName, double metricValue, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
+        }
+
+        public void LogMetric(string metricName, double metricValue, Dictionary<string, string> properties, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        {
+
         }
 
         public void LogVerbose(string message, Dictionary<string, string> properties = null, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)

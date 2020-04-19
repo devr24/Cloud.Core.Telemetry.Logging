@@ -5,9 +5,10 @@ using Xunit;
 
 namespace Cloud.Core.Telemetry.Logging.Tests
 {
+    [IsUnit]
     public class LoggingBuilderExtensionsTest
     {
-        [Fact, IsUnit]
+        [Fact]
         public void Test_AddTelemetryLogger_Positive()
         {
             var services = new ServiceCollection();
@@ -20,7 +21,7 @@ namespace Cloud.Core.Telemetry.Logging.Tests
             Assert.NotNull(serviceProvider.GetService<ILogger<LoggingBuilderExtensionsTest>>());
         }
 
-        [Fact, IsUnit]
+        [Fact]
         public void Test_AddTelemetryLogger_Negative()
         {
             var serviceProvider = new ServiceCollection().BuildServiceProvider();

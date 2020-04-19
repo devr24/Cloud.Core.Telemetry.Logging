@@ -1,14 +1,12 @@
-﻿using System;
-using Cloud.Core.Testing;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+﻿using Cloud.Core.Testing;
 using Xunit;
 
 namespace Cloud.Core.Telemetry.Logging.Tests
 {
+    [IsUnit]
     public class TelemetryLoggerProviderTest
     {
-        [Fact, IsUnit]
+        [Fact]
         public void Test_AddTelemetryLogger_AttachToEventHandler()
         {
 
@@ -19,7 +17,7 @@ namespace Cloud.Core.Telemetry.Logging.Tests
             }
         }
 
-        [Fact, IsUnit]
+        [Fact]
         public void Test_AddTelemetryLogger_EventHandler()
         {
 
@@ -29,7 +27,7 @@ namespace Cloud.Core.Telemetry.Logging.Tests
             }
         }
         
-        [Fact, IsUnit]
+        [Fact]
         public void Test_AddTelemetryLogger_NoEventHandler()
         {
             TestLogger logger = null;
