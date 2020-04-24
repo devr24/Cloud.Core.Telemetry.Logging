@@ -6,35 +6,39 @@ namespace Cloud.Core.Telemetry.Logging.Tests
     [IsUnit]
     public class TelemetryLoggerProviderTest
     {
+        /// <summary>Ensure event handler is triggered when create logger is fired.</summary>
         [Fact]
         public void Test_AddTelemetryLogger_AttachToEventHandler()
         {
-
-            using (var logProvider = new TelemetryLoggerProvider(new TestLogger()))
-            {
-                logProvider.OnCreateLogger += (sender, args) => Assert.NotNull(args.Logger);
-                logProvider.CreateLogger("TestLogger");
-            }
+            // Arrange
+            using var logProvider = new TelemetryLoggerProvider(new FakeTelemetryLogger());
+            
+            // Act/Assert
+            logProvider.OnCreateLogger += (sender, args) => Assert.NotNull(args.Logger);
+            logProvider.CreateLogger("TestLogger");
         }
 
+        /// <summary>Ensure create logger returns the injected logger.</summary>
         [Fact]
         public void Test_AddTelemetryLogger_EventHandler()
         {
-
-            using (var logProvider = new TelemetryLoggerProvider(new TestLogger()))
-            {
-                logProvider.CreateLogger("TestLogger");
-            }
+            // Arrange
+            using var logProvider = new TelemetryLoggerProvider(new FakeTelemetryLogger());
+            
+            // Act/Assert
+            Assert.NotNull(logProvider.CreateLogger("TestLogger"));
         }
-        
+
+        /// <summary>Ensure create logger returns null when no logger has been setup.</summary>
         [Fact]
         public void Test_AddTelemetryLogger_NoEventHandler()
         {
-            TestLogger logger = null;
-            using (var logProvider = new TelemetryLoggerProvider(logger))
-            {
-                Assert.Null(logProvider.CreateLogger("TestLogger"));
-            }
+            // Arrange
+            FakeTelemetryLogger logger = null;
+            using var logProvider = new TelemetryLoggerProvider(logger);
+            
+            // Act/Assert
+            Assert.Null(logProvider.CreateLogger("TestLogger"));
         }
     }
 }

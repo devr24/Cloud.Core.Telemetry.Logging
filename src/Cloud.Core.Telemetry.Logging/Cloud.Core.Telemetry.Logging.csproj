@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Company>Robert McCabe</Company>
+    <Company>Aylesbury Solutions Ltd</Company>
     <IsPackable>true</IsPackable>
     <PackageId>Cloud.Core.Telemetry.Logging</PackageId>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>Cloud.Core.Web .net-Core Core Web</PackageTags>
     <PackageReleaseNotes />
     <Description>Contains functionality for defining specific loggers to work with the Logging Provider used in Service Collections.  Logging Providers can be added to the Service Collection object and used in both web and desktop (console) applications.</Description>
-    <Copyright>Robert McCabe</Copyright>
+    <Copyright>Aylesbury Solutions Ltd</Copyright>
     <Version>3.1</Version>
 	<RepositoryUrl>https://github.com/rmccabe24/Cloud.Core.Telemetry.Logging</RepositoryUrl>
 	<PackageIconUrl>https://cloud1core.blob.core.windows.net/icons/CC.png</PackageIconUrl>
@@ -17,6 +17,7 @@
     <Authors>Robert McCabe</Authors>
     <SignAssembly>false</SignAssembly>
     <ProjectGuid>{85CDA4C8-B792-4FAA-A8F3-3F061DCF61CB}</ProjectGuid>
+    <DocumentationFile>Cloud.Core.Telemetry.Logging.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -7,7 +7,7 @@
     /// <summary>
     /// Telemetry logger factory adds the AddTelemetryLogger method to the ILoggingBuilder.
     /// </summary>
-    public static class IloggingBuilderExtensions
+    public static class LoggingBuilderExtensions
     {
         /// <summary>
         /// Adds the telemetry logger factory method to the logging builder.

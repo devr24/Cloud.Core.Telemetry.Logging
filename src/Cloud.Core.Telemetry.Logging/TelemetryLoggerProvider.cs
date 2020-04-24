@@ -9,7 +9,7 @@
     /// <seealso cref="Microsoft.Extensions.Logging.ILoggerProvider" />
     public class TelemetryLoggerProvider : ILoggerProvider
     {
-        private readonly ITelemetryLogger _logger;
+        internal readonly ITelemetryLogger Logger;
         internal bool Disposed;
 
         /// <summary>
@@ -18,7 +18,7 @@
         /// <param name="logger">The logger.</param>
         public TelemetryLoggerProvider(ITelemetryLogger logger)
         {
-            _logger = logger;
+            Logger = logger;
         }
 
         /// <summary>
@@ -28,8 +28,8 @@
         /// <returns></returns>
         public ILogger CreateLogger(string categoryName)
         {
-            OnCreateLogger?.Invoke(this, new TelemetryLoggerEventArgs(_logger));
-            return _logger;
+            OnCreateLogger?.Invoke(this, new TelemetryLoggerEventArgs(Logger));
+            return Logger;
         }
 
         /// <summary>
