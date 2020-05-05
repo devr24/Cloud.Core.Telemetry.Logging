@@ -21,7 +21,7 @@
     <DocumentationFile>Cloud.Core.Telemetry.Logging.xml</DocumentationFile>
     <PackageReleaseNotes>
 	    Full API Documentation can be found here:
-	    https://cloud1core.blob.core.windows.net/docs/Cloud.Core.Web/api/index.html
+	    https://cloud1core.blob.core.windows.net/docs/Cloud.Core.Telemetry.Logging/api/index.html
     </PackageReleaseNotes>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://dev.azure.com/cloudcoreproject/CloudCore/</PackageProjectUrl>
