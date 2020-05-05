@@ -11,10 +11,9 @@
     <Description>Contains functionality for defining specific loggers to work with the Logging Provider used in Service Collections.  Logging Providers can be added to the Service Collection object and used in both web and desktop (console) applications.</Description>
     <Copyright>Aylesbury Solutions Ltd</Copyright>
     <Version>3.1</Version>
-	<PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-	<RepositoryUrl>https://github.com/rmccabe24/Cloud.Core.Telemetry.Logging</RepositoryUrl>
-	<PackageIconUrl>https://cloud1core.blob.core.windows.net/icons/CC.png</PackageIconUrl>
-	<RepositoryType>Private</RepositoryType>
+    <RepositoryUrl>https://github.com/rmccabe24/Cloud.Core.Telemetry.Logging</RepositoryUrl>
+    <PackageIconUrl>https://cloud1core.blob.core.windows.net/icons/CC.png</PackageIconUrl>
+    <RepositoryType>Private</RepositoryType>
     <Authors>Robert McCabe</Authors>
     <SignAssembly>false</SignAssembly>
     <ProjectGuid>{85CDA4C8-B792-4FAA-A8F3-3F061DCF61CB}</ProjectGuid>
