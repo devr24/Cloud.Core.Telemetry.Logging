@@ -11,6 +11,7 @@
     <Description>Contains functionality for defining specific loggers to work with the Logging Provider used in Service Collections.  Logging Providers can be added to the Service Collection object and used in both web and desktop (console) applications.</Description>
     <Copyright>Aylesbury Solutions Ltd</Copyright>
     <Version>3.1</Version>
+	<PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
 	<RepositoryUrl>https://github.com/rmccabe24/Cloud.Core.Telemetry.Logging</RepositoryUrl>
 	<PackageIconUrl>https://cloud1core.blob.core.windows.net/icons/CC.png</PackageIconUrl>
 	<RepositoryType>Private</RepositoryType>
@@ -18,10 +19,17 @@
     <SignAssembly>false</SignAssembly>
     <ProjectGuid>{85CDA4C8-B792-4FAA-A8F3-3F061DCF61CB}</ProjectGuid>
     <DocumentationFile>Cloud.Core.Telemetry.Logging.xml</DocumentationFile>
+    <PackageReleaseNotes>
+	    Full API Documentation can be found here:
+	    https://cloud1core.blob.core.windows.net/docs/Cloud.Core.Web/api/index.html
+    </PackageReleaseNotes>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://dev.azure.com/cloudcoreproject/CloudCore/</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cloud.Core" Version="3.1.3524.402" />
+    <PackageReference Include="Cloud.Core" Version="3.1.3530.471" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
