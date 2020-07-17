@@ -81,26 +81,24 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         /// <summary>
         /// Logs critical message, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="message">The message to log.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogCritical<T>(string message, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogCritical(string message, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
         /// <summary>
         /// Logs critical exception, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="ex">The exception to log as critical.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogCritical<T>(Exception ex, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogCritical(Exception ex, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
@@ -145,27 +143,25 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         /// <summary>
         /// Logs error exception, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="ex">The exception to log.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogError<T>(Exception ex, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogError(Exception ex, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
         /// <summary>
         /// Logs error exception, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="ex">The exception to log.</param>
         /// <param name="message">The message to log.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogError<T>(Exception ex, string message, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogError(Exception ex, string message, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
@@ -181,7 +177,7 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         {
         }
 
-        public void LogInformation<T>(string message, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogInformation(string message, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
@@ -214,14 +210,13 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         /// <summary>
         /// Logs the metric value, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="metricName">Name of the metric to log.</param>
         /// <param name="metricValue">The metric value.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogMetric<T>(string metricName, double metricValue, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogMetric(string metricName, double metricValue, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
@@ -237,7 +232,7 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         {
         }
 
-        public void LogVerbose<T>(string message, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogVerbose(string message, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
@@ -268,26 +263,24 @@ namespace Cloud.Core.Telemetry.Logging.Tests
         /// <summary>
         /// Logs warning message, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="message">The message to log.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogWarning<T>(string message, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogWarning(string message, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
 
         /// <summary>
         /// Logs warning exception, with an object which is serialized and logged.
         /// </summary>
-        /// <typeparam name="T">Type of object to log.</typeparam>
         /// <param name="ex">The exception to log.</param>
         /// <param name="objectToLog">Object instance to serialize and log.</param>
         /// <param name="callerMemberName">Name of the caller member.</param>
         /// <param name="callerFilePath">The caller file path.</param>
         /// <param name="callerLineNumber">The caller line number.</param>
-        public void LogWarning<T>(Exception ex, T objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
+        public void LogWarning(Exception ex, object objectToLog, [CallerMemberName] string callerMemberName = "", [CallerFilePath] string callerFilePath = "", [CallerLineNumber] int callerLineNumber = -1)
         {
         }
     }
